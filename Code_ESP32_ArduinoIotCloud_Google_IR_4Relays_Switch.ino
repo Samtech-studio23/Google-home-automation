@@ -1,9 +1,8 @@
 /**********************************************************************************
- *  TITLE: Arduino IoT Cloud + IR + Manual (Switch) control 4 Relays with DHT11 & Real-Time feedback using ESP32
+ *  TITLE: Arduino IoT Cloud + Manual (Switch) control 4 Relays with DHT11 & Real-Time feedback using ESP32
  *  Click on the following links to learn more. 
- *  YouTube Video: https://youtu.be/UlT72MMbPu8
  *  Related Blog : 
- *  by Tech StudyCell
+ *  by Samtech Studio
  *  Preferences--> Aditional boards Manager URLs : 
  *  https://dl.espressif.com/dl/package_esp32_index.json, http://arduino.esp8266.com/stable/package_esp8266com_index.json
  *  
@@ -19,10 +18,10 @@
 #include <DHT.h>
 #include <IRremote.h>
  
-const char DEVICE_LOGIN_NAME[]  = "172c9b70-9f13-4cd9-bc48-0f8e75606976":   //Enter de
+const char DEVICE_LOGIN_NAME[]  = "device id":   //Enter de
 const char SSID[]               = "samtech_studio";    //Enter WiFi SSID (name)
-const char PASS[]               = "12345688";    //Enter WiFi password
-const char DEVICE_KEY[]         = "2CTtaH#vnuLftVfUPFp6fY#kg";    //Enter Secret device password (Secret Key)
+const char PASS[]               = "12345678";    //Enter WiFi password
+const char DEVICE_KEY[]         = "secret key";    //Enter Secret device password (Secret Key)
 
 #define DHTPIN              4 //D4  pin connected with DHT
 #define IR_RECV_PIN         35 //D35 pin connected with IR Receiver IC
